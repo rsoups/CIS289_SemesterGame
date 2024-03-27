@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9416b21ba8398814787bd2b5c5eb1151
+guid: 7f052c2966c75244b92f2c8a14a4cbd7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,118 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: greyTile_0
+      name: area2Tiles_0
       rect:
         serializedVersion: 2
-        x: 176
-        y: 184
-        width: 64
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a95da205da028ef43956bf6bddb7f1bb
-      internalID: -1358305987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greyTile_1
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 144
-        width: 64
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a40c1e107e3ed5247836e06c232011f5
-      internalID: -794126436
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greyTile_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 176
-        width: 36
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6362e55b60d9e4b41a7c241d951a67e0
-      internalID: 1967790460
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greyTile_3
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 108
-        width: 36
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 833b7e8827d3766449f23ba80c53514b
-      internalID: 413376126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greyTile_4
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 224
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5657fa8c6fd3b524087b91e6720acc55
-      internalID: -156052792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greenTiles_0
-      rect:
-        serializedVersion: 2
-        x: 176
+        x: 16
         y: 112
-        width: 32
-        height: 21
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,62 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efa45c31f8cd8924f86860c5de12e691
-      internalID: -32769153
+      spriteID: e0addc34f84b82c48bb218a177c77931
+      internalID: 926488270
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: greenTiles_1
+      name: area2Tiles_1
       rect:
         serializedVersion: 2
-        x: 213
+        x: 32
         y: 112
-        width: 32
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3776516b2e39c98468a1b8c101a0e786
-      internalID: -1247288485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greenTiles_2
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 64
-        width: 64
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 662a244f3c35c2542a0781e48480a7ab
-      internalID: -1828228889
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greenTiles_3
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 38
         width: 16
-        height: 21
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fe7a50b1c5d2334f9590e6db9a31c96
-      internalID: -1688046420
+      spriteID: 274cd69033c1f1e4f821b4fc7400da04
+      internalID: 1308569573
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: greenTiles_4
+      name: area2Tiles_2
       rect:
         serializedVersion: 2
-        x: 216
-        y: 38
+        x: 48
+        y: 112
         width: 16
-        height: 21
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 174148a88315d254e850002d5e3ca2cb
-      internalID: 778825062
+      spriteID: 371829ffc58821c45b8953a50e21a702
+      internalID: -1886714222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: greyTile_5
+      name: area2Tiles_3
       rect:
         serializedVersion: 2
-        x: 236
-        y: 38
+        x: 64
+        y: 112
         width: 16
-        height: 21
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,62 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9caedaf9ab588ed44be61beb29ab2770
-      internalID: 1141781145
+      spriteID: ab52b97aea3fa2e4eb3bf4adbb53d5e0
+      internalID: -586896431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blueTiles_0
+      name: area2Tiles_4
       rect:
         serializedVersion: 2
-        x: 100
-        y: 64
-        width: 64
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5dd34a23b1a3f364d854aa0c77760d7a
-      internalID: 603120628
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blueMossyTiles_0
-      rect:
-        serializedVersion: 2
-        x: 100
-        y: 25
-        width: 64
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86b5ecc63e11d1847acf7dcf1f5ceed2
-      internalID: 1649418521
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blueTiles_1
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 11
+        x: 16
+        y: 96
         width: 16
-        height: 21
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -410,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9b5d4acc5e733d4c93ca309c3328414
-      internalID: 1852763823
+      spriteID: 4c03d425226d82c498760b51a84b656e
+      internalID: -299207327
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blueMossyTiles_1
+      name: area2Tiles_5
       rect:
         serializedVersion: 2
-        x: 196
-        y: 11
+        x: 64
+        y: 96
         width: 16
-        height: 21
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,18 +242,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f46ffc9c0634d8b42890ca27d8c52c08
-      internalID: 304378060
+      spriteID: 730619d045c464b44bc4456b29cefecf
+      internalID: 1695722345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: greenTiles_5
+      name: area2Tiles_6
       rect:
         serializedVersion: 2
         x: 96
-        y: 192
+        y: 96
         width: 16
         height: 16
       alignment: 0
@@ -452,18 +263,228 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1118683c13f6d3944a048c59fad1c4d5
-      internalID: 1682934871
+      spriteID: 7a56553c1a6e2174983d704b90c381b6
+      internalID: 1385906390
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: blueTiles_2
+      name: area2Tiles_7
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0884cd4567e05d645bfa0808a0e69ba0
+      internalID: 1669262021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_8
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595ee06a56eabe8448cd18b5093e8b15
+      internalID: -1005187472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_9
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d5be15bafa54114fa71d45a29f714aa
+      internalID: 1692174424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_10
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 80
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3936e3e234615cd42a2e3f65436f1618
+      internalID: -1939592454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43612b1fbba5c33409e935910168af93
+      internalID: -1120924873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_12
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4df58855b9b7e5479b3851892e6497f
+      internalID: 2144439112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecc946f19024d647a273dae122a2c2c
+      internalID: 1957309677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_14
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d7188dcd9d64d4fb10d22a4a217408
+      internalID: 718602774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_15
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc7046b641a70b46a034ec61241bdb2
+      internalID: -510690199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_16
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 48
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e391fde40bc009741af83de3cc12df8d
+      internalID: -498496897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_17
       rect:
         serializedVersion: 2
         x: 96
-        y: 160
+        y: 48
         width: 16
         height: 16
       alignment: 0
@@ -473,62 +494,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7383fe2ff791afe498f77fad55eec17f
-      internalID: -1529988452
+      spriteID: 0bcf7245248beee4d9965b4efef11e09
+      internalID: 214935748
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lavaTiles_0
+      name: area2Tiles_18
       rect:
         serializedVersion: 2
-        x: 30
-        y: 64
-        width: 64
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ece598baa3aa0d54ab04ee4992c1e8ca
-      internalID: 1942964743
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: redTiles_0
-      rect:
-        serializedVersion: 2
-        x: 30
-        y: 25
-        width: 64
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 550043601b819f94cbd3257100518fe6
-      internalID: 1074205100
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lavaTiles_1
-      rect:
-        serializedVersion: 2
-        x: 216
-        y: 11
+        x: 112
+        y: 48
         width: 16
-        height: 21
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,20 +515,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06b50ff391a7b304992f2bd48e3e4474
-      internalID: 564610916
+      spriteID: 7e390c3479db0db48a3ea1ce2e7566a6
+      internalID: -933641242
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: lavaTiles_2
+      name: area2Tiles_19
       rect:
         serializedVersion: 2
-        x: 236
-        y: 11
+        x: 16
+        y: 32
         width: 16
-        height: 21
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -557,18 +536,123 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b1213bce97dc2a429b8ef6ce96c4ba8
-      internalID: 1143439870
+      spriteID: fc1db950f9cf7774ba8bac5887733bcf
+      internalID: -205893021
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: redTiles_1
+      name: area2Tiles_20
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f55d503a9d1e44dad61a3f10f1869b
+      internalID: 492258575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_21
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d84cbe9dc541cd4798b0628c8584208
+      internalID: 1793669101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_22
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97fc642db12bda46960988aec2a9826
+      internalID: 1973678207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_23
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd340ca8a47ce4c4d9013b9ba630169f
+      internalID: -1589587914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_24
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 16
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 812bae404f8c78f4788bdaf66765df21
+      internalID: -523632407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: area2Tiles_25
       rect:
         serializedVersion: 2
         x: 96
-        y: 128
+        y: 16
         width: 16
         height: 16
       alignment: 0
@@ -578,187 +662,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f2b253ec79f76f40b0f3fb942d9ecbd
-      internalID: -1721050536
+      spriteID: 9d7967ae5a28e4c4d88f636e03ce121f
+      internalID: -42141703
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: longPlatform
+      name: area2Tiles_26
       rect:
         serializedVersion: 2
-        x: 4
-        y: 208
-        width: 48
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5353814b693396448bfe6cc407d934cc
-      internalID: -1439629929
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: shortPlatform
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 208
-        width: 32
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 091bf93d1ecbda74ba7ae18046080098
-      internalID: -792978246
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greenLongPlatform
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 192
-        width: 48
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9cd3621652316748a0e5db23ad5ced7
-      internalID: -889853286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: greenShortPlatform
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 192
-        width: 32
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 99522806c12f6154cb83a398162df08d
-      internalID: -2009880956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blueShortPlatform
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 176
-        width: 32
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dd9361a4481644646b3732c1d505b4ef
-      internalID: -292700226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: blueLongPlatform
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 176
-        width: 48
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b216e50b654cb9440879e396832edbec
-      internalID: 755781593
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: redLongPlatform
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 160
-        width: 48
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 56abd3f78b4fd20409eb4274a8937f0e
-      internalID: -1604876197
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: redShortPlatform
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 160
-        width: 32
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5d0e9c76ea49324f8b89f93f861a3c8
-      internalID: 63610413
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: player
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 128
-        width: 12
+        x: 112
+        y: 16
+        width: 16
         height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -767,8 +683,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eff3cffcaa977e541b3e732d50c167a3
-      internalID: 1414374924
+      spriteID: b1985de11db9d8a4cb3acebad9685e0f
+      internalID: 853083679
       vertices: []
       indices: 
       edges: []
@@ -784,37 +700,33 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      blueLongPlatform: 755781593
-      blueMossyTiles_0: 1649418521
-      blueMossyTiles_1: 304378060
-      blueShortPlatform: -292700226
-      blueTiles_0: 603120628
-      blueTiles_1: 1649418521
-      blueTiles_2: 1682934871
-      greenLongPlatform: -889853286
-      greenShortPlatform: -2009880956
-      greenTiles_0: -32769153
-      greenTiles_1: -32769153
-      greenTiles_2: -1247288485
-      greenTiles_3: -1828228889
-      greenTiles_4: -1688046420
-      greenTiles_5: 1682934871
-      greyTile_0: -1358305987
-      greyTile_1: -1358305987
-      greyTile_2: -794126436
-      greyTile_3: 1967790460
-      greyTile_4: 413376126
-      greyTile_5: 1141781145
-      lavaTiles_0: 1942964743
-      lavaTiles_1: 564610916
-      lavaTiles_2: 564610916
-      longPlatform: -1439629929
-      player: 1414374924
-      redLongPlatform: -1604876197
-      redShortPlatform: 63610413
-      redTiles_0: 1074205100
-      redTiles_1: -1721050536
-      shortPlatform: -792978246
+      area2Tiles_0: 926488270
+      area2Tiles_1: 1308569573
+      area2Tiles_10: -1939592454
+      area2Tiles_11: -1120924873
+      area2Tiles_12: 2144439112
+      area2Tiles_13: 1957309677
+      area2Tiles_14: 718602774
+      area2Tiles_15: -510690199
+      area2Tiles_16: -498496897
+      area2Tiles_17: 214935748
+      area2Tiles_18: -933641242
+      area2Tiles_19: -205893021
+      area2Tiles_2: -1886714222
+      area2Tiles_20: 492258575
+      area2Tiles_21: 1793669101
+      area2Tiles_22: 1973678207
+      area2Tiles_23: -1589587914
+      area2Tiles_24: -523632407
+      area2Tiles_25: -42141703
+      area2Tiles_26: 853083679
+      area2Tiles_3: -586896431
+      area2Tiles_4: -299207327
+      area2Tiles_5: 1695722345
+      area2Tiles_6: 1385906390
+      area2Tiles_7: 1669262021
+      area2Tiles_8: -1005187472
+      area2Tiles_9: 1692174424
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
