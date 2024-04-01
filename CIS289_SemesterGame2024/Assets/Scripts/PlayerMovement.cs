@@ -17,6 +17,10 @@ public class PlayerMovement : MonoBehaviour
     Vector2 vecGravity;
     float jumpCounter;
     private bool isJumping;
+    //animation stuff
+    public Animator animator;
+    private float idleBlink = 0f;
+    private IEnumerator BlinkCoroutine;
 
     Rigidbody2D rb;
 
@@ -31,6 +35,15 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
+
+        if(Time.time > idleBlink)
+        {
+            BlinkCoroutine = Blink();
+            StartCoroutine(BlinkCoroutine);
+        }
+
         flipSprite();
         Jump();
     }
@@ -94,6 +107,14 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity -= vecGravity * fallMultiplier * Time.deltaTime;
         }
+    }
+
+    private IEnumerator Blink()
+    {
+        animator.Play("Player_blink");
+        yield return new WaitForSeconds(0.1f);
+        animator.Play("Player_idle");
+        idleBlink = Time.time + Random.Range(0.2f, 3f);
     }
 
     private void OnCollisionEnter2D(Collision2D other)

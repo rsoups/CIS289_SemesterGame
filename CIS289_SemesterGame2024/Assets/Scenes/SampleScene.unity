@@ -420,6 +420,7 @@ MonoBehaviour:
   jumpTime: 0.4
   fallMultiplier: 4
   jumpMultiplier: 2
+  animator: {fileID: 50107288}
 --- !u!95 &50107288
 Animator:
   serializedVersion: 5
