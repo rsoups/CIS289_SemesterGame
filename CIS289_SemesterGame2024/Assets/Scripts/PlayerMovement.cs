@@ -21,6 +21,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator animator;
     private float idleBlink = 0f;
     private IEnumerator BlinkCoroutine;
+    private bool isAttack;
 
     Rigidbody2D rb;
 
@@ -38,14 +39,18 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
 
-        if(Time.time > idleBlink)
+        if(isAttack == false && Mathf.Abs(horizontalInput) <= 0)
         {
-            BlinkCoroutine = Blink();
-            StartCoroutine(BlinkCoroutine);
+            if(Time.time > idleBlink)
+            {
+                BlinkCoroutine = Blink();
+                StartCoroutine(BlinkCoroutine);
+            }
         }
 
         flipSprite();
         Jump();
+        Attack();
     }
 
     private void FixedUpdate()
@@ -109,12 +114,28 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void Attack()
+    {
+        if(Input.GetButtonDown("Fire1"))
+        {
+            animator.SetBool("isAttacking", true);
+            isAttack = true;
+        }
+
+        if(Input.GetButtonUp("Fire1"))
+        {
+            animator.SetBool("isAttacking", false);
+            isAttack = false;
+        }
+    }
+
     private IEnumerator Blink()
     {
         animator.Play("Player_blink");
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.2f);
+
         animator.Play("Player_idle");
-        idleBlink = Time.time + Random.Range(0.2f, 3f);
+        idleBlink = Time.time + Random.Range(0.2f, 5f);
     }
 
     private void OnCollisionEnter2D(Collision2D other)

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 828bd4f4ba39f894585f1f5c246777f7
+guid: 51ecf2a44f10c6d40a03ae0a079dfe2c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -123,13 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: playerWalk2_0
+      name: attackAnimationFULL_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 16
-        height: 16
+        y: 128
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +137,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 618c7ffbdf49e6d41ba3b1cb5d8cb94b
-      internalID: -302657813
+      spriteID: 28143f4693c96e744a398dc316055cda
+      internalID: -1595444506
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerWalk2_1
+      name: attackAnimationFULL_1
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 16
-        height: 16
+        x: 0
+        y: 96
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78704f2952ff68144b7a480aa1b716f3
-      internalID: 1574995376
+      spriteID: 09ccab080d5574849b3955f983764581
+      internalID: -293913507
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerWalk2_2
+      name: attackAnimationFULL_2
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
-        width: 16
-        height: 16
+        x: 0
+        y: 64
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a0eea0fd73604c84cad7fd2b5a614699
-      internalID: -687214500
+      spriteID: 4693f7f14a8f5b24ca7f6b674f2d9983
+      internalID: 1492792152
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: playerWalk2_3
+      name: attackAnimationFULL_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
+        x: 0
+        y: 32
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,50 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1de34ef489ff604b8bd8c26263e5d27
-      internalID: 930583941
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerWalk2_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5aadea006eccca64cb10dbf3f12feb84
-      internalID: -1980658780
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: playerWalk2_5
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 22ac91dfed0d82c4285d43036c82d2df
-      internalID: -13157288
+      spriteID: 1e5504d1cdf24ac4f80e655928365d06
+      internalID: 1919521352
       vertices: []
       indices: 
       edges: []
@@ -259,12 +217,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      playerWalk2_0: -302657813
-      playerWalk2_1: 1574995376
-      playerWalk2_2: -687214500
-      playerWalk2_3: 930583941
-      playerWalk2_4: -1980658780
-      playerWalk2_5: -13157288
+      attackAnimationFULL_0: -1595444506
+      attackAnimationFULL_1: -293913507
+      attackAnimationFULL_2: 1492792152
+      attackAnimationFULL_3: 1919521352
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
