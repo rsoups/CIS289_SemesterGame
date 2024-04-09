@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class WindElement : MonoBehaviour
+public class EndDemo : MonoBehaviour
 {
+    public GameObject restart;
+    public GameObject exit;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,12 +19,13 @@ public class WindElement : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    public void restartGame()
     {
-        if(other.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-            SceneManager.LoadScene("Demo");
-        }
+        SceneManager.LoadScene("Wind Level");
+    }
+
+    public void exitGame()
+    {
+        Application.Quit();
     }
 }
