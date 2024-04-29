@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,7 +7,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     private float horizontalInput;
-     public float moveSpeed = 5f;
+    public float moveSpeed = 5f;
     bool isFacingRight = true;
     private bool isGrounded;
     //jump stuff
@@ -19,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping;
     //animation stuff
     public Animator animator;
+
     //private float idleBlink = 0f;
     // private IEnumerator BlinkCoroutine;
     //private PlayerCombat attack;
@@ -62,9 +64,8 @@ public class PlayerMovement : MonoBehaviour
         if(isFacingRight && horizontalInput < 0f || !isFacingRight && horizontalInput > 0f)
         {
             isFacingRight = !isFacingRight;
-            Vector3 ls = transform.localScale;
-            ls.x *= -1f;
-            transform.localScale = ls;
+
+            transform.Rotate(0f, 180f, 0f);
         }
     }
 
