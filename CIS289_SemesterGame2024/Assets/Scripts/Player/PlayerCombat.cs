@@ -10,7 +10,6 @@ public class PlayerCombat : MonoBehaviour
     public Animator animator;
     public Transform spellPos;
     public SpellMovement castSpell;
-    public PlayerMovement playerMovement;
     public float attackCooldown;
     public float castCooldown;
     float lastAttack;

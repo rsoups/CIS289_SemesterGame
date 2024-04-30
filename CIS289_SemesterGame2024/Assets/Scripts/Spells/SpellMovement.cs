@@ -18,8 +18,21 @@ public class SpellMovement : MonoBehaviour
         //transform.position += -transform.right * Time.deltaTime * speed;
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(this.gameObject);
+        if(other.gameObject.CompareTag("Wall"))
+        {
+            Destroy(this.gameObject);
+        }
+
+        if(other.gameObject.CompareTag("Ground"))
+        {
+            Destroy(this.gameObject);
+        }
+
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 }
