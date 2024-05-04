@@ -19,6 +19,7 @@ public class EnemyPatrolChase : MonoBehaviour
     private float lastAttack = 0f; 
     public float cooldown;
     bool isFacingRight = true;
+    public PlayerHealth health;
 
     // Start is called before the first frame update
     void Start()
@@ -146,6 +147,14 @@ public class EnemyPatrolChase : MonoBehaviour
         else
         {
             lastAttack -= Time.deltaTime;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
         }
     }
 }

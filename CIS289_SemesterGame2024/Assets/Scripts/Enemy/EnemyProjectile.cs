@@ -6,6 +6,8 @@ public class EnemyProjectile : MonoBehaviour
 {
     public float speed = 3f;
     public Rigidbody2D rb;
+    public PlayerHealth health;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,7 @@ public class EnemyProjectile : MonoBehaviour
         
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Wall"))
         {
@@ -32,7 +34,15 @@ public class EnemyProjectile : MonoBehaviour
 
         if(other.gameObject.CompareTag("Player"))
         {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(2);
             Destroy(this.gameObject);
         }
+
+        if(other.gameObject.CompareTag("Spell"))
+        {
+            Destroy(this.gameObject);
+        }
+
+        Destroy(this.gameObject);
     }
 }

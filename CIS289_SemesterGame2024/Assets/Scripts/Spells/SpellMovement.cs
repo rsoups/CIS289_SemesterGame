@@ -6,6 +6,7 @@ public class SpellMovement : MonoBehaviour
 {
     public float speed = 6f;
     public Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,8 +19,14 @@ public class SpellMovement : MonoBehaviour
         //transform.position += -transform.right * Time.deltaTime * speed;
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnCollisionEnter2D(Collision2D other)
     {
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            other.gameObject.GetComponent<EnemyHealth>().TakeDamage(3);
+            Destroy(this.gameObject);
+        }
+
         if(other.gameObject.CompareTag("Wall"))
         {
             Destroy(this.gameObject);
@@ -30,9 +37,11 @@ public class SpellMovement : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        if(other.gameObject.CompareTag("Enemy"))
+        if(other.gameObject.CompareTag("EnemyProjectile"))
         {
             Destroy(this.gameObject);
         }
+        
+        Destroy(this.gameObject);
     }
 }

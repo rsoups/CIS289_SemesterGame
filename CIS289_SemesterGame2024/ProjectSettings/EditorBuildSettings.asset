@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Wind Level.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Demo.unity
+    path: Assets/Scenes/WindToWater.unity
     guid: 903335f584616064a861cfcd4407e3de
+  - enabled: 1
+    path: Assets/Scenes/Water Level.unity
+    guid: ee01efedc75cebd4fadae12f40abc5ac
   m_configObjects: {}

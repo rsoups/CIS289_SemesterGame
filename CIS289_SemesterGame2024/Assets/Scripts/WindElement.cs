@@ -22,7 +22,7 @@ public class WindElement : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             Destroy(gameObject);
-            SceneManager.LoadScene("Demo");
+            SceneManager.LoadScene("WindToWater");
         }
     }
 }

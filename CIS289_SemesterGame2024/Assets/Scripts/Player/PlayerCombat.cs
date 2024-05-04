@@ -16,6 +16,22 @@ public class PlayerCombat : MonoBehaviour
     float lastCast;
     bool canCast = true;
     bool canAttack = true;
+    //melee attack stuff
+    public GameObject attackPoint;
+    public float meleeRadius;
+    public LayerMask enemies;
+    public int meleeDamage;
+    public int spellDamage;
+    public PlayerHealth playerHealth;
+    public PolygonCollider2D sword;
+    //public PolygonCollider2D kb;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        sword = GetComponent<PolygonCollider2D>();
+        sword.enabled = false;
+    }
 
     // Update is called once per frame
     void Update()
@@ -27,7 +43,9 @@ public class PlayerCombat : MonoBehaviour
         {
             if(canAttack)
             {
-                basicAttack();
+                this.gameObject.tag = "Melee";
+                animator.SetBool("isAttacking", true);
+                sword.enabled = true;
             }
             canAttack = false;
         }
@@ -41,17 +59,35 @@ public class PlayerCombat : MonoBehaviour
             canCast = false;
         }
 
+
     }
 
     public void basicAttack()
     {
-        animator.SetTrigger("Attack");
+        //animator.SetTrigger("Attack");
+
+        Collider2D[] enemy = Physics2D.OverlapCircleAll(attackPoint.transform.position, meleeRadius, enemies);
+
+        foreach (Collider2D enemyGameObject in enemy)
+        {
+            //Debug.Log("Hit Enemy");
+            enemyGameObject.GetComponent<EnemyHealth>().currentHealth -= meleeDamage;
+        }
     }
 
     public void spellAttack()
     {
         animator.SetTrigger("Spell");
         Instantiate(castSpell, spellPos.position, spellPos.rotation);
+        playerHealth.TakeMana(2);
+    }
+
+    //this is used in the attack animation
+    public void endAttack()
+    {
+        animator.SetBool("isAttacking", false);
+        sword.enabled = false;
+        this.gameObject.tag = "Player";
     }
 
     void attackCd()
@@ -80,4 +116,8 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(attackPoint.transform.position, meleeRadius);
+    }
 }

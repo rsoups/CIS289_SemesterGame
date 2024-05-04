@@ -9,8 +9,10 @@ public class EnemyPatrolAI : MonoBehaviour
     public GameObject pointB;
     Rigidbody2D rb;
     private Transform currentPoint;
-    public Transform player;
+    //public Transform player;
     public float speed;
+    public float counter;
+    public PlayerHealth health;
 
     // Start is called before the first frame update
     void Start()
@@ -23,13 +25,22 @@ public class EnemyPatrolAI : MonoBehaviour
     void Update()
     {
         Vector2 point = currentPoint.position - transform.position;
-        if(currentPoint == pointB.transform)
+
+        if(counter <= 0)
         {
-            rb.velocity = new Vector2(speed, 0);
+            if(currentPoint == pointB.transform)
+            {
+                rb.velocity = new Vector2(speed, 0);
+            }
+            else
+            {
+                rb.velocity = new Vector2(-speed, 0);
+            }
         }
         else
         {
-            rb.velocity = new Vector2(-speed, 0);
+            rb.velocity = Vector2.zero;
+            counter -= Time.deltaTime;
         }
 
         if(Vector2.Distance(transform.position, currentPoint.position) < 0.5f && currentPoint == pointB.transform)
@@ -50,5 +61,21 @@ public class EnemyPatrolAI : MonoBehaviour
         Vector3 localScale = transform.localScale;
         localScale.x *= -1;
         transform.localScale = localScale;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Melee"))
+        {
+            counter = 0.5f;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
+        }
     }
 }

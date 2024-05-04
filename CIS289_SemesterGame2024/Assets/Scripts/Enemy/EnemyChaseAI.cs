@@ -8,6 +8,9 @@ public class EnemyChaseAI : MonoBehaviour
     public float speed;
     public float aggroRange;
     Rigidbody2D rb;
+    public float counter;
+    public PlayerHealth health;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +20,16 @@ public class EnemyChaseAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //distance to player
-        distanceToPlayer();
+        if(counter <= 0)
+        {
+            //distance to player
+            distanceToPlayer();
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+            counter -= Time.deltaTime;
+        }
     }
 
     void distanceToPlayer()
@@ -58,5 +69,21 @@ public class EnemyChaseAI : MonoBehaviour
     void stopChase()
     {
         rb.velocity = Vector2.zero;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Melee"))
+        {
+            counter = 0.5f;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Player"))
+        {
+            other.gameObject.GetComponent<PlayerHealth>().TakeDamage(1);
+        }
     }
 }

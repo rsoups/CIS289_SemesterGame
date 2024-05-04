@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-
+        
         animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
 
         // if(Mathf.Abs(horizontalInput) <= 0 || attack)
