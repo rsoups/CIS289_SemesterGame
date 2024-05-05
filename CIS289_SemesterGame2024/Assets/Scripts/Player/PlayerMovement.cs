@@ -20,12 +20,8 @@ public class PlayerMovement : MonoBehaviour
     private bool isJumping;
     //animation stuff
     public Animator animator;
-
-    //private float idleBlink = 0f;
-    // private IEnumerator BlinkCoroutine;
-    //private PlayerCombat attack;
-
     Rigidbody2D rb;
+    float counter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -41,22 +37,21 @@ public class PlayerMovement : MonoBehaviour
         
         animator.SetFloat("Speed", Mathf.Abs(horizontalInput));
 
-        // if(Mathf.Abs(horizontalInput) <= 0 || attack)
-        // {
-        //     if(Time.time > idleBlink)
-        //     {
-        //         BlinkCoroutine = Blink();
-        //         StartCoroutine(BlinkCoroutine);
-        //     }
-        // }
-
         flipSprite();
         Jump();
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
+        counter -= Time.deltaTime;
+        if(counter <= 0)
+        {
+            rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+        }
     }
 
     void flipSprite()
@@ -114,15 +109,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // private IEnumerator Blink()
-    // {
-    //     animator.Play("Player_blink");
-    //     yield return new WaitForSeconds(0.2f);
-
-    //     animator.Play("Player_idle");
-    //     idleBlink = Time.time + Random.Range(0.2f, 5f);
-    // }
-
     private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.CompareTag("Ground"))
@@ -136,6 +122,14 @@ public class PlayerMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
+        }
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.gameObject.CompareTag("Spikes"))
+        {
+            counter = 2;
         }
     }
 

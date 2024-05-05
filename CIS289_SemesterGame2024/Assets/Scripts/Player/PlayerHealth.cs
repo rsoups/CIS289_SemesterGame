@@ -9,6 +9,8 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;
     public int maxMana = 10;
     public int currentMana;
+    public AudioClip hurtSoundClip;
+    private AudioSource audioSource;
 
     public PlayerUI healthBar;
 
@@ -19,6 +21,7 @@ public class PlayerHealth : MonoBehaviour
         currentMana = maxMana;
         healthBar.SetMaxHealth(maxHealth);
         healthBar.SetMaxMana(maxMana);
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -38,6 +41,9 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+
+        audioSource.clip = hurtSoundClip;
+        audioSource.Play();
 
         healthBar.SetHealth(currentHealth);
     }

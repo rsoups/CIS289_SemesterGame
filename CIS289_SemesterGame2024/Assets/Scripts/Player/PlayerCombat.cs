@@ -24,13 +24,15 @@ public class PlayerCombat : MonoBehaviour
     public int spellDamage;
     public PlayerHealth playerHealth;
     public PolygonCollider2D sword;
-    //public PolygonCollider2D kb;
+    public AudioClip slashSoundClip;
+    private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
         sword = GetComponent<PolygonCollider2D>();
         sword.enabled = false;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -43,6 +45,8 @@ public class PlayerCombat : MonoBehaviour
         {
             if(canAttack)
             {
+                audioSource.clip = slashSoundClip;
+                audioSource.Play();
                 this.gameObject.tag = "Melee";
                 animator.SetBool("isAttacking", true);
                 sword.enabled = true;
@@ -58,8 +62,6 @@ public class PlayerCombat : MonoBehaviour
             }
             canCast = false;
         }
-
-
     }
 
     public void basicAttack()
