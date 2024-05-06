@@ -2,20 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI;
 
-public class StartMenu : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
     public GameObject startMenuUI;
 
-    public void StartGame()
+    public void MainMenu()
     {
-        SceneManager.LoadScene("Wind Level");
-    }
-
-    public void LevelSelect()
-    {
-        SceneManager.LoadScene("Level Select");
+        SceneManager.LoadScene("Start");
     }
 
     public void QuitGame()

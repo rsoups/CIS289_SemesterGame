@@ -764,7 +764,6 @@ GameObject:
   - component: {fileID: 102023513}
   - component: {fileID: 102023517}
   - component: {fileID: 102023516}
-  - component: {fileID: 102023518}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: Respawn
@@ -920,18 +919,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5342064, y: 0.67430806}
   m_EdgeRadius: 0
---- !u!114 &102023518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 102023512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cefecc6d305770140b77a33fc290f0a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &212616308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2181608180530152728, guid: b234b8aeb97865a4480292feece3a65c, type: 3}

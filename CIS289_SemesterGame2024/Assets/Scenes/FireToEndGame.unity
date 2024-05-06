@@ -475,6 +475,9 @@ MonoBehaviour:
   - You have all the elements now
   - That's it. That's the end of the game for now.
   - But what was it I was trying to remember...
+  - ...
+  - Game Art made by Remi Ethun
+  - Music by Kevin Macleod
   textSoundClip: {fileID: 8300000, guid: 98dbf395bda7186458efe827e6502726, type: 3}
 --- !u!114 &531907661
 MonoBehaviour:

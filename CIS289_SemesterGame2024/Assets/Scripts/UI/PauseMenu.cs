@@ -46,23 +46,27 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
-    // public void RestartLevel()
-    // {
-    //     if(SceneManager.GetActiveScene().name == "Wind Level")
-    //     {
-    //         SceneManager.LoadScene("Wind Level");
-    //     }
+    public void RestartLevel()
+    {
+        pauseMenuUI.SetActive(false);
+        Time.timeScale = 1f;
+        isPaused = false;
 
-    //     if(SceneManager.GetActiveScene().name == "Water Level")
-    //     {
-    //         SceneManager.LoadScene("Water Level");
-    //     }
+        if(SceneManager.GetActiveScene().name == "Wind Level")
+        {
+            SceneManager.LoadScene("Wind Level");
+        }
 
-    //     if(SceneManager.GetActiveScene().name == "Fire Level")
-    //     {
-    //         SceneManager.LoadScene("Fire Level");
-    //     }
-    // }
+        if(SceneManager.GetActiveScene().name == "Water Level")
+        {
+            SceneManager.LoadScene("Water Level");
+        }
+
+        if(SceneManager.GetActiveScene().name == "Fire Level")
+        {
+            SceneManager.LoadScene("Fire Level");
+        }
+    }
 
     public void Quit()
     {

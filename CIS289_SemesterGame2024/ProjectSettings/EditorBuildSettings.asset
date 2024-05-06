@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Start.unity
     guid: f551440d9b1e4634c9fde2232fac97bb
   - enabled: 1
+    path: Assets/Scenes/Level Select.unity
+    guid: f07d474b1c3e6274fa1653b5be6e2300
+  - enabled: 1
     path: Assets/Scenes/Wind Level.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
@@ -26,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FireToEndGame.unity
     guid: 380b931deead0194bbc082dbbca6d299
+  - enabled: 1
+    path: Assets/Scenes/Game Over.unity
+    guid: 6f3ec9e1f85410f42a3cb3ad46d1c063
   m_configObjects: {}
