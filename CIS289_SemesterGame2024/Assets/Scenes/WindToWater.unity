@@ -276,7 +276,7 @@ MonoBehaviour:
   textSpeed: 0.08
   lines:
   - Obtained the 'Wind' Element
-  - Press E to push wind towards your foes
+  - Press E or Y to push wind towards your foes
   - You can now attack enemies of the Water Element
   - ...
   - ...?
