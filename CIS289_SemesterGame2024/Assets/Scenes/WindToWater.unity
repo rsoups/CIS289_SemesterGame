@@ -276,8 +276,10 @@ MonoBehaviour:
   textSpeed: 0.08
   lines:
   - Obtained the 'Wind' Element
-  - It feels...
-  - familiar...
+  - Press E to push wind towards your foes
+  - You can now attack enemies of the Water Element
+  - ...
+  - ...?
   textSoundClip: {fileID: 8300000, guid: 98dbf395bda7186458efe827e6502726, type: 3}
 --- !u!82 &230038252
 AudioSource:

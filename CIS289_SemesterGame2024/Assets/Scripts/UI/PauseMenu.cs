@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -44,8 +46,26 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
+    // public void RestartLevel()
+    // {
+    //     if(SceneManager.GetActiveScene().name == "Wind Level")
+    //     {
+    //         SceneManager.LoadScene("Wind Level");
+    //     }
+
+    //     if(SceneManager.GetActiveScene().name == "Water Level")
+    //     {
+    //         SceneManager.LoadScene("Water Level");
+    //     }
+
+    //     if(SceneManager.GetActiveScene().name == "Fire Level")
+    //     {
+    //         SceneManager.LoadScene("Fire Level");
+    //     }
+    // }
+
     public void Quit()
     {
-        Debug.Log("Quitting Game");
+        Application.Quit();
     }
 }

@@ -6,7 +6,7 @@ public class SpellMovement : MonoBehaviour
 {
     public float speed = 6f;
     public Rigidbody2D rb;
-    public float counter = 5;
+    public float counter = 3;
 
     // Start is called before the first frame update
     void Start()

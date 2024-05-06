@@ -5,12 +5,12 @@ using UnityEngine;
 public class Death : MonoBehaviour
 {
     public GameObject player;
-    public Transform respawnPoint;
+    public GameObject respawnPoint;
 
     // Start is called before the first frame update
     void Start()
     {
-        //THIS IS A TEMP DEATH SCRIPT, NOT THE OFFICIAL
+        //newRespawnPoint = GameObject.Find("Player").GetComponent<Death>();
     }
 
     // Update is called once per frame
@@ -23,7 +23,7 @@ public class Death : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            player.transform.position = respawnPoint.position;
+            player.transform.position = respawnPoint.transform.position;
         }
     }
 }

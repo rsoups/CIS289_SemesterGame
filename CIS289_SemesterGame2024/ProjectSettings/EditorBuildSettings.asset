@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Water Level.unity
     guid: ee01efedc75cebd4fadae12f40abc5ac
+  - enabled: 1
+    path: Assets/Scenes/WaterToFire.unity
+    guid: 415b7030ea8907548859e8383c7d9802
+  - enabled: 1
+    path: Assets/Scenes/Fire Level.unity
+    guid: a244bc674a3b4b74f90867fe8e7c9bc0
+  - enabled: 1
+    path: Assets/Scenes/FireToEndGame.unity
+    guid: 380b931deead0194bbc082dbbca6d299
   m_configObjects: {}

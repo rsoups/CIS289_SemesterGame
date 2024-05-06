@@ -73,6 +73,16 @@ public class Dialogue : MonoBehaviour
             {
                 SceneManager.LoadScene("Water Level");
             }
+
+            if(SceneManager.GetActiveScene().name == "WaterToFire")
+            {
+                SceneManager.LoadScene("Fire Level");
+            }
+
+            if(SceneManager.GetActiveScene().name == "FireToEndGame")
+            {
+                SceneManager.LoadScene("Start");
+            }
         }
     }
 }

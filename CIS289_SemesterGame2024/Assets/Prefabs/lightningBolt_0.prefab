@@ -195,3 +195,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4.5
   rb: {fileID: 4234424295379981594}
+  counter: 3

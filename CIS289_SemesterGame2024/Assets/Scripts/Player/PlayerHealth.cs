@@ -66,8 +66,6 @@ public class PlayerHealth : MonoBehaviour
         if(other.gameObject.CompareTag("Spikes"))
         {
             TakeDamage(1);
-            //need to respawn to checkpoint as well
-
         }
     }
 }

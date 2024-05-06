@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour
     //animation stuff
     public Animator animator;
     Rigidbody2D rb;
-    float counter = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -43,15 +42,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        counter -= Time.deltaTime;
-        if(counter <= 0)
-        {
-            rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
-        }
-        else
-        {
-            rb.velocity = Vector2.zero;
-        }
+        rb.velocity = new Vector2(horizontalInput * moveSpeed, rb.velocity.y);
     }
 
     void flipSprite()
@@ -122,14 +113,6 @@ public class PlayerMovement : MonoBehaviour
         if(other.gameObject.CompareTag("Ground"))
         {
             isGrounded = true;
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.CompareTag("Spikes"))
-        {
-            counter = 2;
         }
     }
 
